@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project 2 — Persuasive or Deceptive Visualization</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 900px; margin: 2rem auto; line-height: 1.5; padding: 0 1rem; }
+    h1, h2, h3 { color: #111; }
+    .figure { margin: 2rem 0; padding: 1rem; border: 1px solid #eee; border-radius: 8px; }
+    img { max-width: 100%; height: auto; display: block; margin: 1rem 0; }
+    .decisions { margin-left: 1rem; }
+    .score { font-weight: bold; }
+    .subtitle { font-style: italic; color: #555; }
+  </style>
+</head>
+<body>
+
+  <h1>Project 2 Persuasive / Deceptive Visualization</h1>
+
+  <p><strong>Proposition:</strong> Increasing access to abortion clinics reduces travel burden and lowers abortion rates.</p>
+
+  <h2>Main View (Supports Proposition)</h2>
+
+  <div class="figure">
+    <h3>Figure 1: Scatter of % lacking clinic access vs out-of-state travel</h3>
+    <p class="subtitle">States with fewer clinics see higher travel rates.</p>
+    <img src="images/figure1.png" alt="Figure 1 Scatterplot">
+    <p><span class="score">Score: 2.0</span></p>
+    <ul class="decisions">
+      <li>Raw data is used without manipulation, ensuring the visualization is fully honest.</li>
+      <li>Axes start at zero, preventing exaggeration of trends.</li>
+      <li>Simple color scheme avoids distraction and emphasizes the relationship.</li>
+      <li>Point markers are uniform, giving equal weight to each state.</li>
+    </ul>
+  </div>
+
+  <div class="figure">
+    <h3>Figure 2 Travel vs Clinic Reduction Over Time</h3>
+    <p class="subtitle">Even with fewer clinics, abortions continue via alternative means.</p>
+    <img src="images/figure2.png" alt="Figure 2 Line chart">
+    <p><span class="score">Score: 0.5</span></p>
+    <ul class="decisions">
+      <li>The data fails to take into account socio economic reasonings.</li>
+      <li>The bar chart itself is not exaggerated and both axis starts at 0</li>
+      <li>The simple lines are meant to provide a somewhat easy to read figure.</li>
+    </ul>
+  </div>
+
+  <h2>Opposing View (Challenges Proposition)</h2>
+
+  <div class="figure">
+    <h3>Figure 3 Percent change in clinics vs abortion rates</h3>
+    <img src="images/figure3.png" alt="Figure 3 Bar chart">
+    <p><span class="score">Score: -1</span></p>
+    <ul class="decisions">
+      <li>The figure is somewhat deceptive in nature due to the use of percentages to exaggerate the effects.</li>
+      <li>Most of the data is clustered around the 0% change in the middle.</li>
+      <li>The data starts at -100% change to skew the viewers perception of the data.</li>
+    </ul>
+  </div>
+
+  <div class="figure">
+    <h3>Figure 4 Distribution of clinic changes across states</h3>
+    <img src="images/figure4.png" alt="Figure 4 Histogram">
+    <p><span class="score">Score: -1.5</span></p>
+    <ul class="decisions">
+      <li>The use of the number of clinics change helps skew the data.</li>
+      <li>The Y axis scaling makes it seem like adding or removing clinics does not have much affect on abortions</li>
+      <li>A very significant middle of 0 makes the changes in clinics in the x axis seem less significant than it actually is.</li>
+    </ul>
+  </div>
+
+  <h2>Reflection</h2>
+  <p>
+    Working on both pro and counter-visualizations highlighted how subtle design choices affect interpretation. Using axis scales, percentages, and annotations can make the same dataset tell very different stories. This experience emphasized that ethical visualization is not just about avoiding outright lies but providing context, transparency, and clarity while acknowledging how visual cues influence perception.
+  </p>
+  <p>
+    Persuasion is a natural part of visualization, but it crosses into misleading when viewers are not given enough context or when small differences are exaggerated. For example, truncating axes or over-smoothing trends can dramatically change takeaways. Acceptable persuasive choices are those that remain truthful and transparent, while still guiding the reader to understand key insights.
+  </p>
+
+  <h2>Data & Methods</h2>
+  <p>
+    Data source: Guttmacher Institute Abortion Data by U.S. State (2017–2020). Transformations include percentage calculations, basic sorting, and creation of derived measures for out-of-state travel. Figures include annotations and subtitles to emphasize key insights.
+  </p>
+
+</body>
+</html>
